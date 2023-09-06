@@ -3,8 +3,8 @@
 [[ -f ~/.zsh/functions.zsh ]] && source ~/.zsh/functions.zsh
 [[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 
-# Ensure proxy host is up to date
-update_proxyhost;
+# Initialize JEnv
+eval "$(jenv init -)"
 
 # Load Starship
 eval "$(starship init zsh)"
