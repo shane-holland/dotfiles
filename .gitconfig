@@ -1,0 +1,14 @@
+[alias]
+    # deletes all git branches in the current directory except for develop and the current branch 
+	prune-branches = !git branch | grep -v \" develop\\|*\" | xargs git branch -D
+	# pushes committed changes to your current branch on remote, and sets the upstream to remote
+	push-it = !git branch | grep \"* \" | sed \"s/^.*\\* //\" | xargs git push -u origin
+	# rebase pull from develop
+	rebase-develop = pull origin develop --rebase
+[core]
+	editor = code --wait
+[user]
+	name = {First Last}
+	email = {first.last}@mastercard.com
+[commit]
+	template = ~/.gitmessage

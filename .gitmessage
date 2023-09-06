@@ -1,0 +1,12 @@
+# JIRA-ID: Summary, imperative, start upper case, don't end with a period
+# No more than 60 chars. #### 60 chars is here:            #
+
+# Body: Explain *what* and *why* (not *how*)
+# Wrap at 72 chars. ################################## which is here:  #
+
+# Include Co-authored-by for all contributors.
+# Include at least one empty line before it. Format:
+# Co-authored-by: name <user@mastercard.com>
+
+# JIRA link
+# https://ie-jira.vocalink.co.uk/browse/TODO-0000% 
